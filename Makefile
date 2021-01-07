@@ -115,8 +115,7 @@ coverage_report/index.html: $(PYTHON_VENV) .coverage
 tests-docker-setup-db:
 	docker stop $(DOCKER_CONTAINER_BASE)-db-test || true
 	docker build -t $(DOCKER_BASE)-db-test test-db
-	docker run --detach \
-		--name $(DOCKER_CONTAINER_BASE)-db-test \
+	docker run --name $(DOCKER_CONTAINER_BASE)-db-test \
 		--publish=5432:5432 \
 		--env=POSTGRES_DB=pyramid_oereb_test \
 		$(DOCKER_BASE)-db-test
