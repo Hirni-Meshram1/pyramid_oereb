@@ -119,6 +119,7 @@ tests-docker-setup-db:
 		--name $(DOCKER_CONTAINER_BASE)-db-test \
 		--publish=5432:5432 \
 		--env=POSTGRES_DB=pyramid_oereb_test -e POSTGRES_PASSWORD=password postgres:10 \
+		#$(DOCKER_BASE)-db-test
 	bash wait-for-db.sh $(DOCKER_CONTAINER_BASE)-db-test $(PG_PASSWORD) $(PG_USER)
 
 .PHONY: tests-docker-drop-db
