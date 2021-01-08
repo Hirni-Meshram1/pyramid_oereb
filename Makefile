@@ -117,7 +117,7 @@ tests-docker-setup-db:
 	docker build -t $(DOCKER_BASE)-db-test test-db
 	docker run --name $(DOCKER_CONTAINER_BASE)-db-test \
 		--publish=5432:5432 \
-		--env=POSTGRES_DB=pyramid_oereb_test 
+		--env=POSTGRES_DB=pyramid_oereb_test \
 		#$(DOCKER_BASE)-db-test
 	bash wait-for-db.sh $(DOCKER_CONTAINER_BASE)-db-test $(PG_PASSWORD) $(PG_USER)
 
