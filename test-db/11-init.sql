@@ -1,2 +1,2 @@
-wget http://launchpadlibrarian.net/436921515/postgresql-11-postgis-2.5_2.5.3+dfsg-1_arm64.deb
+wget https://ubuntu.pkgs.org/18.04/postgresql-amd64/postgresql-10-postgis-2.4_2.4.4+dfsg-4.pgdg18.04+1_amd64.deb.html
 #CREATE EXTENSION IF NOT EXISTS postgis;
