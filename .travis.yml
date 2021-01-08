@@ -24,6 +24,7 @@ env:
 
 install:
 - sudo service postgresql stop
+- sudo apt install postgis postgresql-10-postgis-2.5
 - make install
 
 script:
