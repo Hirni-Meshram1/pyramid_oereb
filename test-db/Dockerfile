@@ -1,6 +1,6 @@
-FROM camptocamp/postgres:10
+FROM postgres:10
 
-LABEL maintainer Camptocamp "info@camptocamp.com"
+#LABEL maintainer Camptocamp "info@camptocamp.com"
 
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD password
