@@ -23,7 +23,7 @@ env:
   - secure: nDtb/Jx2JnFB8KLg2YES5fTdk/qZ3zDyDwd6HR21Vz+QNSwdwy4k+C+LjTMefGg4tPnuJ+MP43jbF2QmYLttJiB20Oi6sXyvZtoiCwEHzSRd12/aozlbLWQO+FXJRo54IT+T4hao7THeuihXSEmtscZwjdE/xBFTwYXJ9QRpfPhnYSjdZFuiFTlwB7RT78SunL4C6aZDf3OhCw/VGk0bxoWnZdqVm1Ek5ZDkRxPVK6t2S2tMjfM82Tmioi/HsJ1+h2Eb2ny3FR19NpRDllfv71SedtSut/EQbXaNOzJHoh41eXJpNMNQHHD+IrBzbqvAZjJnepm+wYq98+SZOLlmOKwpdnZQRNoDYba3Gl/XBkgw1lB1k0fDHEn+hIBhikFwxyWjIqtPPlL3B8ZyLXyRD43zizaoe7WBFfJEB9lBzmGKxjQkF/N2t9jIhTbWu4K9vRaMC17gmm8kEVkb4loirEn0fAvFtXDuv7RFkETKOv5P9lP4QFxdzRzmsfZ70OPuJSZXasK2v30QjeW+17KDwK+iqUbfsNPM82zBfnkUuaNS8ciZDrBdsMuboX88iLGxyXCQk6cpBVCH0XQI31D8LktepktUzOJ5yIp9oTCQs59lptN6ScuublXdrnVjNQHaJFQckZ7OMcqEn3bA+8e411FGRtA9aD8t3KM/eyveISw=
 
 before_install:
-- sudo apt-get -y install postgis postgresql-10-postgis-2.5
+- wget https://ubuntu.pkgs.org/18.04/postgresql-amd64/postgresql-10-postgis-2.4_2.4.4+dfsg-4.pgdg18.04+1_amd64.deb.html
 
 install:
 - sudo service postgresql stop
