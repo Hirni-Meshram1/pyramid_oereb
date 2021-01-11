@@ -1,13 +1,14 @@
 sudo: required
 
 language: python
-
+group: edge
+dist: focal
 matrix:
   include:
   - python: "3.8"
     env: PYTHON_VERSION=python3
   - python: "3.8"
-    arch: arm64
+    arch: arm64-graviton2
     env: PYTHON_VERSION=python3
 
 services:
