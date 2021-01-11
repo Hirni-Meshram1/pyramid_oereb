@@ -8,7 +8,7 @@ matrix:
     arch: arm64-graviton2
     group: edge
     dist: focal
-    virt: lxd
+    virt: vm
     env: PYTHON_VERSION=python3
 
 services:
