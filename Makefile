@@ -113,7 +113,6 @@ coverage_report/index.html: $(PYTHON_VENV) .coverage
 
 .PHONY: tests-docker-setup-db
 tests-docker-setup-db:
-	#docker stop $(DOCKER_CONTAINER_BASE)-db-test || true
 	docker build -t $(DOCKER_BASE)-db-test test-db
 	docker run --detach \
 		--name $(DOCKER_CONTAINER_BASE)-db-test \
