@@ -5,10 +5,7 @@ matrix:
   - python: "3.8"
     env: PYTHON_VERSION=python3
   - python: "3.8"
-    arch: arm64-graviton2
-    group: edge
-    dist: focal
-    virt: vm
+    arch: arm64
     env: PYTHON_VERSION=python3
 
 services:
@@ -22,9 +19,6 @@ env:
   - secure: Jaue9MKSY5BcZSJ8/E+saS885xQfxDF10Tflew8vUBsBqQOoumzB/yE697xNXgTfdrwfDJDR9zo2yB32j0z5oRN8V7H5Lhxu1vCeg3XFYkM8U6jlAP6uTH0cOl3EUIalCI9+SPaYRSC70z5l1n4sQDMaxNeaS8FaobWC/+EsCq5SO7cNDW5ZzLlCbgOF/lK8SDPJJsnSHU9Sr4RjdXtB2R3nGiIgfMUSHH2+pv6BHFV6APjvr+cnAii+TZwXXzca5i2MExh2kcMArTTpzBQlorVAXtxIlL1AtOUNktQJBabFxoo0VFOn9+xPIFNnqNVuqaRsysDmIrdlhMzvbZahJxx/1W4hHn4ITNOt+vhxZ+/C2FhauZMB+F1r1S7JIHr891PoLl7TlAGM3xqU24/KIRV/VsMQQqxUzW9DkuQ7d25qkWOCis78abrgeTyrT4FZlxU93WjxeXJfQ1Dcpzjd6l7X/ZEKAQnDSxyZlNfuepVUqRVnkg7e/9/ezIWOcvW1Jm+nAtAvPsbqYvO6/io8VsvwPK6K1d0h7uhAZw128lzwvg8tHrGgXglJKKpo4YbK3G9ohCEYYuJEnZh7DE/1LRyql+3IXHUTUn+aD53jvHHCE4YfCSQPJUOsgr3HirG8HDkXbTZiObE0rRKENDTFkFmXWPwhCySgvDVvfu/037s=
   - GITHUB_USERNAME=c2c-bot-gis-ci
   - secure: nDtb/Jx2JnFB8KLg2YES5fTdk/qZ3zDyDwd6HR21Vz+QNSwdwy4k+C+LjTMefGg4tPnuJ+MP43jbF2QmYLttJiB20Oi6sXyvZtoiCwEHzSRd12/aozlbLWQO+FXJRo54IT+T4hao7THeuihXSEmtscZwjdE/xBFTwYXJ9QRpfPhnYSjdZFuiFTlwB7RT78SunL4C6aZDf3OhCw/VGk0bxoWnZdqVm1Ek5ZDkRxPVK6t2S2tMjfM82Tmioi/HsJ1+h2Eb2ny3FR19NpRDllfv71SedtSut/EQbXaNOzJHoh41eXJpNMNQHHD+IrBzbqvAZjJnepm+wYq98+SZOLlmOKwpdnZQRNoDYba3Gl/XBkgw1lB1k0fDHEn+hIBhikFwxyWjIqtPPlL3B8ZyLXyRD43zizaoe7WBFfJEB9lBzmGKxjQkF/N2t9jIhTbWu4K9vRaMC17gmm8kEVkb4loirEn0fAvFtXDuv7RFkETKOv5P9lP4QFxdzRzmsfZ70OPuJSZXasK2v30QjeW+17KDwK+iqUbfsNPM82zBfnkUuaNS8ciZDrBdsMuboX88iLGxyXCQk6cpBVCH0XQI31D8LktepktUzOJ5yIp9oTCQs59lptN6ScuublXdrnVjNQHaJFQckZ7OMcqEn3bA+8e411FGRtA9aD8t3KM/eyveISw=
-
-before_install:
-- wget http://ports.ubuntu.com/pool/universe/p/postgis/postgresql-10-postgis-2.4_2.4.3+dfsg-4_arm64.deb
 
 install:
 - sudo service postgresql stop
