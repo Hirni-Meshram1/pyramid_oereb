@@ -1,4 +1,4 @@
-FROM postgres:10
+FROM hirnimeshram/postgres-test:10
 
 #LABEL maintainer Camptocamp "info@camptocamp.com"
 
