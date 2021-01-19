@@ -7,11 +7,8 @@ docker_container="$1"
 pg_password="$2"
 pg_user="$3"
 
-echo "#######################################################"
 cmd="PGPASSWORD=$pg_password exec psql -h \"\$POSTGRES_PORT_5432_TCP_ADDR\" -p \"\$POSTGRES_PORT_5432_TCP_PORT\" -U $pg_user -w -c \"\l\""
-echo "########################################@@@@@@@@@@@@@@@@@@@@@@@@"
 echo -n "Waiting for database to be ready"
-echo $docker_container
 until docker run -i --link "$docker_container":postgres --rm postgres sh -c "$cmd" > /dev/null 2>&1; do
   echo -n "."
   sleep 1
