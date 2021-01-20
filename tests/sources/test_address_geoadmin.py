@@ -86,4 +86,4 @@ def test_read(status_code):
             assert address.street_name == u'Muehlemattstrasse'
             assert isinstance(address.geom, Point)
             assert address.geom.x == 2621857.9869956686
-            assert address.geom.y == 1259852.8231037324
+            assert address.geom.y == 1259852.8231037352
