@@ -1,4 +1,4 @@
-FROM hirnimeshram/postgres-x86:12
+FROM hirnimeshram/postgres-all:12
 
 #LABEL maintainer Camptocamp "info@camptocamp.com"
 
